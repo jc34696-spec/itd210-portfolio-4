@@ -1,0 +1,148 @@
+/* Navigation Bar Styles for Golden Gym */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #232323;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.nav-logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #ff2d2d;
+    letter-spacing: 2px;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+}
+.nav-links a:hover {
+    background: #ff2d2d;
+    color: #fff;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .nav-links a {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #232323;
+    color: #fff;
+        }
+        /* Flexbox Navigation Bar */ Navigation bar like this makes it to where even if the screen size changes, the nav bar will still look good and be functional
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffd700;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #bfa100;
+        }
+        /* CSS Grid for About Section */ Grid helps the images pop out while not being too big for the screen
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 3rem auto;
+            background: #181818;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            padding: 2rem;
+        }
+        .about-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-image img {
+            width: 260px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    /* Reduce image sizes to 300px */
+    .about-image img,
+    img {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+    }
+    /* Tablet view: 600px media queries for images */
+    @media (max-width: 600px) {
+        .about-image img {
+            max-width: 90vw;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    }
+        .about-content h1 {
+            color: #ff2d2d;
+            margin-bottom: 1rem;
+        }
+        .about-content p {
+            color: #fff;
+            line-height: 1.7;
+        }
+        @media (max-width: 800px) {
+            .about-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }

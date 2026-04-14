@@ -1,1 +1,2 @@
-# itd210-portfolio-4
+# itd210-portfolio-2
+# My name is Joshua, this Readme and further is about a gym called the Golden Gym. It is like other gyms but more so for beginners, who work to try and help people who want to go to the gym but have no idea where to start. The golden gym works to help show them a balanced workout plan that fits whatever they have going on in life while also giving good diet advice as well. This website is for my ITD 210 class.
